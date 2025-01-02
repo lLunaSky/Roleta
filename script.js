@@ -2,9 +2,8 @@ function ajustarPosicao() {
     const elemento = document.getElementById("tres");
     const elemento2 = document.getElementById("dois");
     const largura = window.innerWidth;
-    const altura = window.innerHeight;
 
-    if (largura / altura > 16 / 9) {
+    if (largura > 1070) {
         elemento.style.transform = "translate(100px, -50%)";
         elemento2.style.transform = "translate(-250px, -50%)";
     } else {
