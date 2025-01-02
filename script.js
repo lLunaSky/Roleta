@@ -8,8 +8,8 @@ function ajustarPosicao() {
         elemento.style.transform = "translate(100px, -50%)";
         elemento2.style.transform = "translate(-250px, -50%)";
     } else {
-        elemento.style.transform = "translate(50%, 150px)";
-        elemento2.style.transform = "translate(50%, -250px)";
+        elemento.style.transform = "translate(40%, 100px)";
+        elemento2.style.transform = "translate(40%, -250px)";
     }
 }
 
