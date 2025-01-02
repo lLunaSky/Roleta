@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'SevenSegment';
+    src: url('Fonte/SevenSegment.ttf') format('truetype');
+}
+
+body {
+    background-color: #fbeec1;
+    height: 100vh;
+    background-image: url('Imagens/TexturaTabua.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.participant {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 5px solid #9C9C9C;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-image: url('Imagens/TexturaMetal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#player1 {
+    grid-area: player1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: rotate(180deg) translate(50%, -0%);
+}
+
+#player2 {
+    grid-area: player2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(90deg) translate(-50%, -0%);
+}
+
+#player3 {
+    grid-area: player3;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+#player4 {
+    grid-area: player4;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: rotate(270deg) translate(50%, -100%);
+}
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.bar {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 15%;
+    height: 100px;
+    background-image: url('Imagens/TexturaDuvida.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bar.active {
+    background-image: none;
+    background-color: black;
+}
+
+.bar.atirou {
+    background-image: url('Imagens/TexturaBala.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.lost {
+    color: red;
+    font-weight: bold;
+}
+
+#reset-all {
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url('Imagens/IconeX.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+#reset-uni {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.player-container {
+    display: inline-block;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.player-container button {
+    padding: 10px 19px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.player-container  button.selected {
+    background-image: url('Imagens/TexturaFuro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#start {
+    font-family:'SevenSegment';
+    border: 0;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    background-image: url('Imagens/TexturaRelogio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tres {
+    border: 0;
+    cursor: pointer;
+    background-image: url('Imagens/CartaTres.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(100px, -50%);
+}
+
+#dois {
+    border: 0;
+    cursor: pointer;
+    background-image: url('Imagens/CartaDois.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-250px, -50%);
+}
