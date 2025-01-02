@@ -1,3 +1,22 @@
+function ajustarPosicao() {
+    const elemento = document.getElementById("tres");
+    const elemento2 = document.getElementById("dois");
+    const largura = window.innerWidth;
+    const altura = window.innerHeight;
+    
+    if (largura / altura > 16 / 9) {
+        elemento.style.transform = "translate(50%, 150px);";
+        elemento2.style.transform = "translate(50%, -250);";
+    } else {
+        elemento.style.transform= "translate(50%, 150px);";
+        elemento2.style.transform = "translate(50%, -250);";
+    }
+}
+
+ajustarPosicao();
+
+window.addEventListener("resize", ajustarPosicao);
+
 let interval;
 const chances = { 1: 0, 2: 0, 3: 0, 4: 0 };
 const counters = { 1: 0, 2: 0, 3: 0, 4: 0 };
