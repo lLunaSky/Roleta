@@ -5,11 +5,11 @@ function ajustarPosicao() {
     const altura = window.innerHeight;
 
     if (largura / altura > 16 / 9) {
-        elemento.style.transform = "translate(50%, 150px)";
-        elemento2.style.transform = "translate(50%, -250px)";
-    } else {
         elemento.style.transform = "translate(100px, -50%)";
         elemento2.style.transform = "translate(-250px, -50%)";
+    } else {
+        elemento.style.transform = "translate(50%, 150px)";
+        elemento2.style.transform = "translate(50%, -250px)";
     }
 }
 
