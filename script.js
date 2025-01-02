@@ -6,10 +6,10 @@ function ajustarPosicao() {
     
     if (largura / altura > 16 / 9) {
         elemento.style.transform = "translate(50%, 150px);";
-        elemento2.style.transform = "translate(50%, -250);";
+        elemento2.style.transform = "translate(50%, -250px);";
     } else {
-        elemento.style.transform= "translate(50%, 150px);";
-        elemento2.style.transform = "translate(50%, -250);";
+        elemento.style.transform= "transform: translate(100px, -50%);";
+        elemento2.style.transform = "translate(-250px, -50%);";
     }
 }
 
