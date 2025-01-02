@@ -3,7 +3,7 @@ function ajustarPosicao() {
     const elemento2 = document.getElementById("dois");
     const largura = window.innerWidth;
 
-    if (largura > 1070) {
+    if (largura > 1120) {
         elemento.style.transform = "translate(100px, -50%)";
         elemento2.style.transform = "translate(-250px, -50%)";
     } else {
